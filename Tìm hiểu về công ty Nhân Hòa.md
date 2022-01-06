@@ -36,7 +36,6 @@
 
 			. Name Server
 				
-
 			. Raw Registry Data(có thể)
 
 
