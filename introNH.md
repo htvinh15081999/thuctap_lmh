@@ -35,10 +35,11 @@
 			. Important Date
 
 			. Name Server
-
-			. DNSSEC
+			<img src="https://imgur.com/EQRXe1l">
 
 			. Raw Registry Data(có thể)
+
+
 
 	+ Chuyển tên miền về Nhân Hòa:
 
