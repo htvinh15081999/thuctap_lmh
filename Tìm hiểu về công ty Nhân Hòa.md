@@ -35,7 +35,7 @@
 			. Important Date
 
 			. Name Server
-				https://imgur.com/EQRXe1l
+				<img src="C:\Users\thuctap\Desktop\Minh_Hoàng\thuctap_lmh\image\1.PNG">
 
 			. Raw Registry Data(có thể)
 
