@@ -523,7 +523,7 @@ Với thanh đại chỉ sang màu xanh với hiển thị đầy đủ thông t
         Với đội ngũ chuyên gia giàu kinh nghiệm, sẵn sàng tư vấn, hỗ trợ doanh nghiệp 24/7/365 trong quá trình triển khai chuyển đổi số.
 
 ## 2.10 Phần mềm
-## 2.10.1 cPanel
+### 2.10.1 cPanel
 - cPanel là một giao diện web quản lý Hosting của khách hàng và là một trong những WHM tốt nhất được biết đến trên internet.
 
 <img src="image/15.PNG">
@@ -556,9 +556,9 @@ Với thanh đại chỉ sang màu xanh với hiển thị đầy đủ thông t
     + SAO LƯU
         Tạo các bản sao lưu của file và các CSDL, phục hồi file và CSDL trên máy chủ từ một bản sao lưu, ví dụ từ máy tính cá nhân của người dùng.
 
-## 2.10.2 Plesk
+### 2.10.2 Plesk
 
-## 2.10.3 CloudLinux
+### 2.10.3 CloudLinux
 - Giới thiệu
     <img src="image/16.PNG">
 
@@ -576,7 +576,7 @@ Với thanh đại chỉ sang màu xanh với hiển thị đầy đủ thông t
     + Nâng cao hiệu năng máy chủ
     + Giảm chi phí hỗ trợ và vận hành
     + Hỗ trợ kỹ thuật
-## 2.10.4 Litespeed
+### 2.10.4 Litespeed
 
 <img src="image/8.PNG">
 
