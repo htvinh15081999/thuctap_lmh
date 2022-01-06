@@ -35,7 +35,7 @@
 			. Important Date
 
 			. Name Server
-			<img src="https://imgur.com/EQRXe1l">
+				https://imgur.com/EQRXe1l
 
 			. Raw Registry Data(có thể)
 
