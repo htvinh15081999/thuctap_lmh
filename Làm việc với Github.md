@@ -1,4 +1,4 @@
-# 1. Tạo một repository trên github
+# 1. Các bước
 <img src="image/18.PNG">
 
 - Click dấu +, chọn new repository.
@@ -29,4 +29,9 @@
 
 <img src="image/25.PNG">
 
-- Khi muốn đồng bộ code lên github, ta chọn theo hình rồi chọn dấu tích để commit.
+- Khi muốn đồng bộ code lên github, ta chọn theo hình rồi chọn dấu tích để commit. 
+
+<img src="image/26.PNG">
+
+- Sau khi nhập message để commit, ta chọn sync change để đồng bộ chúng lên github.
+
