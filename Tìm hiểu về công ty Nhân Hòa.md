@@ -35,7 +35,7 @@
 			. Important Date
 
 			. Name Server
-				<img src="C:\Users\thuctap\Desktop\Minh_Hoàng\thuctap_lmh\image\1.PNG">
+				
 
 			. Raw Registry Data(có thể)
 
