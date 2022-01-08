@@ -290,15 +290,14 @@ Với thanh đại chỉ sang màu xanh với hiển thị đầy đủ thông t
         - Đội ngũ kỹ thuật UMail giàu kinh nghiệm, chuyên nghiệp luôn sẵn sàng hỗ trợ 24/7, mang đến bạn sự tin tưởng, yên tâm khi sử dụng .
 
     Quản trị mạnh mẽ:
-
     + Chứng thực email
-        -Chứng thực SPF/ DKIM giúp tăng độ tin cây địa chỉ email gửi đi là đúng chủ thể, không bị giả mạo, hạn chế tối đa mail bị đánh dấu spam.
+        - Chứng thực SPF/ DKIM giúp tăng độ tin cây địa chỉ email gửi đi là đúng chủ thể, không bị giả mạo, hạn chế tối đa mail bị đánh dấu spam.
     + Quản lý chuyên nghiệp
-        -Trang quản trị tiện lợi giúp quản trị viên dễ dàng thêm/ xóa/ quản lý nhóm, người dùng và linh hoạt tùy chỉnh dung lượng email trên từng tài khoản.
+        - Trang quản trị tiện lợi giúp quản trị viên dễ dàng thêm/ xóa/ quản lý nhóm, người dùng và linh hoạt tùy chỉnh dung lượng email trên từng tài khoản.
     + Không lo bỏ sót
-        -Cấu hình Catch-all giúp nhận được tất cả email gửi đến bất kể người gửi nhập sai tên email, không còn phải lo bỏ sót bất kỳ thông tin quan trọng nào.
+        - Cấu hình Catch-all giúp nhận được tất cả email gửi đến bất kể người gửi nhập sai tên email, không còn phải lo bỏ sót bất kỳ thông tin quan trọng nào.
     + Hoạt động xuyên suốt
-        -Luôn có các máy chủ định tuyến và dự phòng SMTP trong trường hợp email không gởi được nhằm đảm bảo hoạt động ổn định của khách hàng.
+        - Luôn có các máy chủ định tuyến và dự phòng SMTP trong trường hợp email không gởi được nhằm đảm bảo hoạt động ổn định của khách hàng.
 
     Nhiều tính năng hữu ích khác như:
     + Bộ lọc thư rác
@@ -311,13 +310,13 @@ Với thanh đại chỉ sang màu xanh với hiển thị đầy đủ thông t
         - Giờ đây việc check mail đã dễ dàng hơn bao giờ hết, thực hiện mọi lúc mọi nơi với ứng dụng UMail trên 2 nền tảng iOS và Android.
 - Nhân Hòa còn cung cấp 4 gói đăng ký Umail với các thông số và mức giá khác nhau đề phù hợp với nhiều đối tượng.
     + Cá Nhân
-  	    Dung lượng 2GB/user 
+  	    - Dung lượng 2GB/user 
     + Cơ bản
-        Dung lượng 5GB/user
+        - Dung lượng 5GB/user
     + Doanh nghiệp
-  	    Dung lượng 10GB/user
+  	    - Dung lượng 10GB/user
     + Chuyên Nghiệp
-  	    Dung lượng 20 GB/user
+  	    - Dung lượng 20 GB/user
 ### 2.4.2 GG WorkSpace
 - Giới thiệu
     + Google Workspace là bộ công cụ làm việc trực tuyến bao gồm Gmail, Meet, Chat, Lịch, Drive, Tài liệu, Trang tính, Trang trình bày,… được thay đổi tên thương hiệu từ G Suite.
