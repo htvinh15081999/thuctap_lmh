@@ -90,6 +90,83 @@
     + Mỗi trunk được cấu hình riêng biệt, vì vậy có thể có VLAN gốc khác nhau trên các trung kế riêng biệt.
 # 3. Cấu hình Vlan
 
+    <img src="image/9.PNG">
+- Catalyst switch 2960 và 3650 hỗ trợ đế 4000 Vlan
+- Dải Vlan thường từ vlan 1- 1005
+    + Sử dụng từ nhỏ đến vừa cho việc kinh doanh
+    + 1002 -1005 được lưu trữ lại
+    + 1, 1002-1005 được tạo tự động và không thể xóa
+    + Lưu trữ tại file vlan.dat trong bộ nhớ flash
+    + VTP có thể đồng bộ giữa 2 switch
+- Dải Vlan mở rộng từ 2006-4095
+    + Được sử dụng bởi nhà cung cấp dịch vụ
+    + Luôn chạy ở running-config
+    + Hỗ trợ nhiều feature Vlan hơn
+    + Yêu cầu cấu hình VTP
+
+- Câu lệnh tạo Vlan
+    + Vlan được thông tin chi tiết và lưu trữ tại vlan.dat, nên muốn tạo vlan chúng ta phải vào global config.
+
+    <img src="image/10.PNG">
+     
+    + Ví dụ:
+        - Khi muốn cấu hình vlan 20 , ta cấu hình id trước, sau đó đặt tên sau
+        - Nếu không đặt tên cho vlan, cisco sẽ đặt cho vlan 1 tên mặc định, ví dụ như vlan0020.
+
+    <img src="image/11.PNG">
+
+- Câu lệnh assign port cho vlan.
+    + Bất khì vlan nào được tạo, ta đều có thể assign cho nó chính xác 1 interface.
+
+    <img src="image/12.PNG">
 
 # 4. Vlans Trunk
+
+- Trunk ở layer2 và mang traffic cho tất cả các Vlan.
+- Câu lệnh cấu hình trunk: 
+
+    <img src="image/13.PNG">
+
+- Ví dụ:
+    Có mô hình : 
+
+    <img src="image/14.PNG">
+
+    + Subnet cho từng Vlan là: 
+        VLAN 10 - Faculty/Staff - 172.17.10.0/24
+        VLAN 20 - Students - 172.17.20.0/24
+        VLAN 30 - Guests - 172.17.30.0/24
+        VLAN 99 - Native - 172.17.99.0/24
+    + F0/1 được cấu hình làm trunk port
+
+    <img src="image/15.PNG">
+
+- Để xác nhận cấu hình trunk, ta dùng câu lệnh :
+    Show int fa0/1 switchport
+
+    <img src="image/16.PNG">
+
+    Trả về các giá trị:
+    + Đã bật switchport
+    + Admin mode đã bật
+    + Đã bật mode hoạt động cho trunk
+    + Đóng gói bằng dot1q
+    + Native Vlan là 99
+    + Tất cả Vlan được tạo trên Switch đều có thể traffic qua trunk này.
+
+- Để reset một trunk về cấu hình mặc định, ta dùng các câu lệnh:
+    
+    <img src="image/17.PNG">
+
+
 # 5. Dynamic Trunking Protocol
+
+- Dynamic Trunking Protocol (DTP) là một giao thức độc quyền của Cisco
+- DTP có hững đặc điểm như:
+    + Cài đặt mặc định trên Switch Catalyst 2960 và 2950
+    + Chế độ Dynamic-auto có mặc định trên Switch Catalyst 2950 và 2960
+    + Có thể tắt bằng lệnh không thương lượng.
+    + Có thể bật lại bằng các cài đặt interface thành dynamic-auto
+    + Đặt chuyển đổi thành static trunk static access sẽ tránh được các vấn đề thương lượng với switchport mode trunk hoặc các lệnh truy cập chế độ cổng chuyển đổi. 
+
+- Khi muốn xác thực DTP mode, ta dùng câu lệnh show dtp interfaces.
