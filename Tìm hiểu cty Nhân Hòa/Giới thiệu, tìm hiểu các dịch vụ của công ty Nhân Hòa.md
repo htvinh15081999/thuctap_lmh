@@ -267,8 +267,7 @@ Với thanh đại chỉ sang màu xanh với hiển thị đầy đủ thông t
     + Secure Site EV Multi-Domain SSL
 ## 2.4 Email
 ### 2.4.1 Umail
-
-<img src="image/9.PNG>
+<img src="image/9.PNG">
 
 - Đặc điểm
     + Email theo tên miền doanh nghiệp
