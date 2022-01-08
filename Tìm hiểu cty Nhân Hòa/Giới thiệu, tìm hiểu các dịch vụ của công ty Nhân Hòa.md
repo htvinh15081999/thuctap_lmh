@@ -281,31 +281,34 @@ Với thanh đại chỉ sang màu xanh với hiển thị đầy đủ thông t
     Nâng tầm thương hiệu
 
     + Khẳng định thương hiệu
-        Từ nay email của bạn sẽ chuyên nghiệp hơn với dạng tên miền riêng abc@tencongty.com (vd info@umail.vn) chứ không còn đơn điệu như trước đây.
+        - Từ nay email của bạn sẽ chuyên nghiệp hơn với dạng tên miền riêng abc@tencongty.com (vd info@umail.vn) chứ không còn đơn điệu như trước đây.
     + Bảo mật an toàn
-        Email người dùng được mã hóa trong suốt quá trình truyền tải. Ngoài ra UMail thay đổi cổng kết nối POP3/ IMAP bằng SSL/ TLS giúp nâng cao tính năng bảo mật.
+        - Email người dùng được mã hóa trong suốt quá trình truyền tải. Ngoài ra UMail thay đổi cổng kết nối POP3/ IMAP bằng SSL/ TLS giúp nâng cao tính năng bảo mật.
     + Di chuyển email dễ dàng
-        UMail với tùy chọn di chuyển qua máy chủ IMAP/ POP giúp bạn có thể chuyển đổi dễ dàng tất cả email cũ sang UMail để có những trải nghiệm đỉnh cao.
+        - UMail với tùy chọn di chuyển qua máy chủ IMAP/ POP giúp bạn có thể chuyển đổi dễ dàng tất cả email cũ sang UMail để có những trải nghiệm đỉnh cao.
     + Hỗ trợ kỹ thuật 24/7
-        Đội ngũ kỹ thuật UMail giàu kinh nghiệm, chuyên nghiệp luôn sẵn sàng hỗ trợ 24/7, mang đến bạn sự tin tưởng, yên tâm khi sử dụng .
+        - Đội ngũ kỹ thuật UMail giàu kinh nghiệm, chuyên nghiệp luôn sẵn sàng hỗ trợ 24/7, mang đến bạn sự tin tưởng, yên tâm khi sử dụng .
+
     Quản trị mạnh mẽ:
+
     + Chứng thực email
-        Chứng thực SPF/ DKIM giúp tăng độ tin cây địa chỉ email gửi đi là đúng chủ thể, không bị giả mạo, hạn chế tối đa mail bị đánh dấu spam.
+        -Chứng thực SPF/ DKIM giúp tăng độ tin cây địa chỉ email gửi đi là đúng chủ thể, không bị giả mạo, hạn chế tối đa mail bị đánh dấu spam.
     + Quản lý chuyên nghiệp
-        Trang quản trị tiện lợi giúp quản trị viên dễ dàng thêm/ xóa/ quản lý nhóm, người dùng và linh hoạt tùy chỉnh dung lượng email trên từng tài khoản.
+        -Trang quản trị tiện lợi giúp quản trị viên dễ dàng thêm/ xóa/ quản lý nhóm, người dùng và linh hoạt tùy chỉnh dung lượng email trên từng tài khoản.
     + Không lo bỏ sót
-        Cấu hình Catch-all giúp nhận được tất cả email gửi đến bất kể người gửi nhập sai tên email, không còn phải lo bỏ sót bất kỳ thông tin quan trọng nào.
+        -Cấu hình Catch-all giúp nhận được tất cả email gửi đến bất kể người gửi nhập sai tên email, không còn phải lo bỏ sót bất kỳ thông tin quan trọng nào.
     + Hoạt động xuyên suốt
-        Luôn có các máy chủ định tuyến và dự phòng SMTP trong trường hợp email không gởi được nhằm đảm bảo hoạt động ổn định của khách hàng.
+        -Luôn có các máy chủ định tuyến và dự phòng SMTP trong trường hợp email không gởi được nhằm đảm bảo hoạt động ổn định của khách hàng.
+
     Nhiều tính năng hữu ích khác như:
     + Bộ lọc thư rác
-        Với bộ lọc thư rác/ spam thông minh, UMail giúp bạn không phải mất thời gian để đọc và xóa những email không mong muốn, tập trung hơn vào công việc chính.
+        - Với bộ lọc thư rác/ spam thông minh, UMail giúp bạn không phải mất thời gian để đọc và xóa những email không mong muốn, tập trung hơn vào công việc chính.
     + Chuyển hướng tự động
-        Dễ dàng tạo quy tắc để tự động chuyển hướng email người gửi vào đúng thư mục chỉ định, giúp hộp thư của bạn chuyên nghiệp và gọn gàng hơn.
+        - Dễ dàng tạo quy tắc để tự động chuyển hướng email người gửi vào đúng thư mục chỉ định, giúp hộp thư của bạn chuyên nghiệp và gọn gàng hơn.
     + Tìm kiếm tất cả
-        Không phải khó khăn tìm từng email, tìm kiếm nhanh chóng theo tất cả những gì bạn muốn từ nội dung, chủ đề, tên, địa chỉ mail,….
+        - Không phải khó khăn tìm từng email, tìm kiếm nhanh chóng theo tất cả những gì bạn muốn từ nội dung, chủ đề, tên, địa chỉ mail,….
     + Ứng dụng chuyên nghiệp
-        Giờ đây việc check mail đã dễ dàng hơn bao giờ hết, thực hiện mọi lúc mọi nơi với ứng dụng UMail trên 2 nền tảng iOS và Android.
+        - Giờ đây việc check mail đã dễ dàng hơn bao giờ hết, thực hiện mọi lúc mọi nơi với ứng dụng UMail trên 2 nền tảng iOS và Android.
 - Nhân Hòa còn cung cấp 4 gói đăng ký Umail với các thông số và mức giá khác nhau đề phù hợp với nhiều đối tượng.
     + Cá Nhân
   	    Dung lượng 2GB/user 
