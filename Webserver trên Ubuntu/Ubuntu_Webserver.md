@@ -86,3 +86,5 @@
 - Kết quả: 
 
     <img src="image/22.PNG">
+
+- Tại windows, chỉnh sửa file hosts để truy cập.
