@@ -43,6 +43,7 @@
     + Theo nguyên lí là có thể nhưng thực tế không hiệu quả ví nó yêu cầu nhiều lần tra cứu DNS trước khi tên miền có thể được tải -> sẽ bị chậm.
 
     <img src="image/4.PNG">
+    
     + Ở đây blog.example.com trỏ tới www.example.com, www.example.com trở tới example.com.
     + Chúng ta có thể trỏ trực tiếp từ blog đến example.com, nên việc trỏ CNAME đến CNAME là thừa.
 - Hạn chế của CNAME record: 
