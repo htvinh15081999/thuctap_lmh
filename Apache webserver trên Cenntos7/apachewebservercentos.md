@@ -59,3 +59,5 @@ Thêm dòng này ở cuối cùng
 
 <img src="image/8.PNG">
  
+ 10. sudo ln -s /etc/httpd/sites-avalable/lmh.com.conf /etc/httpd/sites-enabled/lmh.com.conf
+Câu lệnh tạo link
