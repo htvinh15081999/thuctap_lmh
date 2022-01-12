@@ -90,8 +90,72 @@
 - NS record là gì?
     + Nameserver - NS record cho biết DNS server nào có thầm quyền cho tên miền đó ( tức là những server nào chứa các DNS record thực tế )
     + Về cơ bản , các NS record cho internet biết nơi cần đến để tìm ra địa chỉ IP của tên miền. Một tên miền thường có nhiều NS record có thể chỉ ra các server đích danh chính và dự phòng cho tên miền đó.
-    + Nếu không có NS record hoặc NS record cấu hình đúng thì người dùng sẽ không thể tải 1 web hoặc ứng dụng
+    + Nếu không có NS record hoặc NS record cấu hình đúng thì người dùng sẽ không thể tải 1 web hoặc ứng dụng.
+    + ví dụ :
+
+    <img src="image/8.PNG">
+    
+    + NS record không bao giờ trỏ tới CNAME.
+- Name server là gì:
+    + Nameserver là một loại DNS server, nó lưu trữ tất cả các DNS record của một tên miền, bao gồm A, MX, CNAME record.
+    + Hầu hết tất cả các tên miền đều dựa vào nhiều nameserver để tăng độ tin cậy: nếu một nameserver gặp sự cố hoặc không khả dụng, các truy vấn DNS có thể chuyển sang một server khác. 
+    + Thông thường có một nameserver chính và một số server phụ, lưu trữ các bản sao của các DNS record trong server chính. Cập nhật server chính cũng sẽ kích hoạt nameserver phụ.
+    + NS record nên liệt kê nhiều hơn một server.
+- Khi nào NS record nên được cập nhật hoặc thay đổi?
+    + Quản trị viên tên miền nên cập nhập NS record của họ khi cần thay đổi nameserver của tên miền của mình.
+    + QTV cũng có thể phải cập nhật NS record nếu họ muốn một tên miền phụ sử dụng các nameserver khác nhau
+    + Khi các NS record được cập nhật, có thể phải mất vào giờ để các thay đổi được sao chép trong toàn bộ DNS.
 ### 7. SOA record
+- SOA record là gì?
+    + Start of Authority - SOA record lưu trữ thông tin quan trọng về tên miền hoặc zone cũng như email của admin, khi tên miền được cập nhật lần cuối và server sẽ đợi bao lâu giữa các lần làm mới.
+    + Tất cả các DNS zone cần một SOA recore để tuân theo các tiêu chuẩn của IETF, các SOA record cũng rất quan trọng trong việc chuyển zone.
+
+    <img src="image/9.PNG">
+
+    + Trường RNAME là địa chỉ mail của admin. SOA lưu admin.example.com tương đương với admin@example.com
+- Zone seri là gì?
+    + Trong DNS, zone là nơi kiểm soát không gian tên. Một zone có thể bao gồm 1 tên miền duy nhất, một tên miền và các tên miền phụ hoặc nhiều tên miền. Trong một số trường hợp, zone tương đương với tên miền.
+    + Zone seri là số phiên bản cho SOA record, trong ví dụ trên, số seri được liệt kê ở serial. Khi số seri thay đổi, điều này cảnh báo cho các server phụ rằng chúng nên cập nhật các bản sao của file zone thông qua chuyển zone.
+- Các phần còn lại của SOA record là gì?
+    + MNAME: đây là tên của nameserver chính cho khu vực. 
+    + Refresh: Khoảng thời gian tính bằng giây server phụ phải đợi trước khi yêu cầu server chính cung cấp SOA record xem nó đã được cập nhật hay chưa.
+    + Retry: Khoảng thời gian server phải đợi để yêu cầu 1 nameserver
+    chính không phản hồi cập nhật lại.
+    + Expire: Nếu server phụ không nhận được phản hổi từ server chính trong khoảng thời gian này, nó sẽ ngừng phản hồi các truy vấn cho zone.
+- Zone transfer là gì:
+    + Chuyển vùng DNS là quá trình gửi dữ liệu DNS record từ nameserver chính đến nameserver phụ. SOA record được chuyển đầu tiên. Số seri cho server phụ biết liệu phiên bản của nó có cần được cập nhật hay không. Chuyển vùng diễn ra qua giao thức TCP.
 ### 8. SRV record
+- SRV record là gì?
+    + Service - SRV record chỉ định server và port cho các dịch vụ cụ thể như gọi điện mạng (VoIP), tin nhắn tức thì... Hầu hết các DNS record chỉ xác định một server hoặc một IP, nhưng các SRV record cũng bao gồm một cổng tại địa chỉ IP đó. Một số giao thức internet yêu cầu sử dụng các SRV record để hoạt động.
+- Port là gì?
+    + Trong mạng, port là nơi ảo - chỉ định những tiếng trình nào mà lưu lượng mạng đi đến trong một máy tính. Các port cho phép máy tính dễ dàng phân biệt các loại lưu lượng khác nhau: các luồng VoIP đi đến 1 port khác với các thông điệp mail.
+    + Mỗi một giao thức cụ thể phải được kết nối với 1 port cụ thể.
+- Điều xảy ra trong một SRV record?
+    + Một SRV record chứa những thông tin sau:
+
+        <img src="image/10.PNG">
+    + Tuy nhiên, SRV record được định dạng theo cách: 
+    _service._proto.name. TTL class type of record priority weight port target.
+    + Do đó theo ví dụ ở trên, một SRV record sẽ trông giống:
+    _xampp._tcp.example.com 86400 IN SRV 10 5 5223 server.example.com
+
+    + SRV record phải trỏ đến A record hoặc AAAA record.
 ### 9. PTR record
-## Các loại record ít phổ biến
+- PTR record là gì?
+    + Pointed record - PTR record cung cấp tên miền được liên kết với địa chỉ IP. PTR record ngược với A record.
+    + PTR record được sử dụng trong tra cứu DNS ngược.
+- PTR record được lưu trữ như thế nào?
+    + Trong IPv4:
+        + Trong khi các A record được lưu trữ dưới tên miền nhất định, các PTR record được lưu trữ theo IP đã đảo ngược và có thêm ".in-addr.arpa". Ví dụ : bản ghi PTR cho ip 192.168.0.1 sẽ được lưu trữ trong "1.0.168.192.in-addr.arpa".
+    + Trong IPv6: 
+        + Địa chỉ IPv6 được xây dựng khác với địa chỉ IPv4 và các bản ghi IPv6 PTR tồn tại trong một không gian khác bên trong .arpa. Cũng được viết ngược + ".ipv6.arpa"
+
+- Một số mục đích sử dụng chính cho PTR record:
+    + PTR record được sử dụng trong truy vấn DNS ngược; những cách sử dụng phổ biến cho DNS ngược bao gồm:
+
+        + Chống thư rác: Một số bộ lọc chống thư rác sử dụng DNS ngược để kiểm tra tên miền của địa chỉ email và xem liệu các địa chỉ IP liên kết có khả năng được sử dụng bởi các máy chủ email hợp pháp hay không.
+
+        + Khắc phục sự cố gửi email: Vì các bộ lọc chống thư rác thực hiện các kiểm tra này, các vấn đề gửi email có thể do bản ghi PTR bị định cấu hình sai hoặc bị thiếu. Nếu một miền không có bản ghi PTR hoặc nếu bản ghi PTR chứa miền sai, các dịch vụ email có thể chặn tất cả các email từ miền đó.
+
+        + Ghi nhật ký: Nhật ký hệ thống thường chỉ ghi lại địa chỉ IP; tra cứu DNS ngược có thể chuyển những tên miền này thành tên miền cho nhật ký mà con người dễ đọc hơn.
+
