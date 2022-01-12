@@ -21,7 +21,9 @@
 - AAAA record khớp tên miền với một địa chỉ IPv6. AAAA record không khác gì A record ngoài việc nó lưu trữ địa ipv6 của tên miền thhay vì địa chỉ IPv4 của tiên miền đó.
 - IPv6 là phiên bản mới nhất của giao thức IP. 
 - Một ví dụ về AAAA record.
+
     <img src="image/2.PNG">
+    
 - AAAA record được sử dụng khi nào?
     + Giống như A record, AAAA record cho phép các thiết bị của người dùng tìm địa chỉ IPv6 cho một tên miền, sau đó thiết bị có thể kết nối và tải trang web.
     + AAAA record chỉ được sử dụng khi tên miền có địa chỉ IPv6, và thiết bị của người dùng phải được cấu hình để phục vụ IPv6. 
@@ -37,13 +39,15 @@
     + ĐÓ là CNAME record luôn phân giải đến cùng một trang web mà tên miền đó trỏ tới.
     + CNAME record chỉ trỏ máy khách đến cùng địa chỉ IP với miền gốc. Khi máy khách truy cập địa chỉ IP đó, máy chủ web vẫn sẽ xử lí url tương ứng. Vậy nên khi truy cập lmh.minhhoang.com, máy chỉ sẽ xem url và nhận thấy nó là của lmh.minhhoang.com và sẽ phân phối trang lmh chứ không phải là trang chủ.
 - Ví dụ về CNAME record: 
+
     <img src="image/3.PNG">
+
     + Tại ví dụ này có thể thấy blog.example.com trỏ đến example.com và theo như ví dụ ở A record thì nó sẽ phân giải thành địa chỉ IP 192.0.2.1.
 - CNAME record có thể trỏ đến CNAME record khác không?
     + Theo nguyên lí là có thể nhưng thực tế không hiệu quả ví nó yêu cầu nhiều lần tra cứu DNS trước khi tên miền có thể được tải -> sẽ bị chậm.
 
     <img src="image/4.PNG">
-    
+
     + Ở đây blog.example.com trỏ tới www.example.com, www.example.com trở tới example.com.
     + Chúng ta có thể trỏ trực tiếp từ blog đến example.com, nên việc trỏ CNAME đến CNAME là thừa.
 - Hạn chế của CNAME record: 
@@ -53,7 +57,9 @@
     + Mail exchange - MX record là record chuyển hướng tới mail server. MX record cho biết cách gửi mail theo SMTP(Simple mail transfer Protocal, một giao thức tiêu chuẩn cho tất cả email). 
     + Giống như CNAME record, MX record luôn phải trỏ tới 1 tên miền khác.
     + Ví dụ: 
+
     <img src="image/5.PNG">
+
     + Trường priority trước tên miền của các MX record biểu thị sự ưu tiên, giá trị càng thấp thì độ ưu tiên càng lớn. Theo trên, máy chủ mặc định sẽ là mailhost1, nếu lỗi, máy chủ sẽ trở thành mailhost2.
     + Ta cũng có thể cấu hình 2 MX record để cả hai máy chủ có mức độ ưu tiên ngang nhau và nhận được một lượng thư bằng nhau.
         
@@ -73,6 +79,7 @@
 - TXT record là gì?
     + Text - TXT record cho phép quả trị viên tên miền nhập văn bản vào hệ thống tên miền. 
     + TXT record ban đầu được dự định là nơi lưu trữ các ghi chú mà con người có thể đọc được. Tuy nhiên bây giờ cũng có thể đưa một số dữ liệu mà máy có thể đọc được vào TXT record.
+   
     <img src="image/7.PNG">
 
     + Ngày nay, 2 cách sử dụng quan trọng nhất của TXT record là ngăn chặn thư rác và xác minh quyền sở hữu tên miền.
@@ -135,6 +142,7 @@
     + Một SRV record chứa những thông tin sau:
 
         <img src="image/10.PNG">
+
     + Tuy nhiên, SRV record được định dạng theo cách: 
     _service._proto.name. TTL class type of record priority weight port target.
     + Do đó theo ví dụ ở trên, một SRV record sẽ trông giống:
