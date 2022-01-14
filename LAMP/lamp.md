@@ -31,9 +31,6 @@
 - PHP là lớp trên cùng của stack. Lớp script bao gồm PHP và / hoặc các ngôn ngữ lập trình web tương tự khác. Các website và ứng dụng web chạy trong lớp này.
 
 - PHP được phát triển như là một ngôn ngữ kịch bản trên máy chủ (server-side scripting language). Nó được phát triển bởi Rasmus Lerdorf, và những người khác.
-
-- Bạn có thể tải phiên bản mới nhất của PHP tại: php.net
-
 2. Python
 - Python là một ngôn ngữ lập trình bậc cao và là một trong những ngôn ngữ đa năng nhất cho đến thời điểm hiện tại. Lần đầu ra mắt vào 1990 bởi Guido van Rossum, cho đến ngày hôm nay, Python vẫn là một ngôn ngữ thông dụng vì có cấu trúc rõ ràng, dễ học và giúp những người mới tiếp cận lập trình tiếp cận và tiếp thu.
 3. Perl
