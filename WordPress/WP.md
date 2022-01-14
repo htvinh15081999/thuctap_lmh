@@ -50,7 +50,7 @@
 3. Giải nén
 - tar xzvf latest.tar.gz
 4. Thiết lập quyền tránh vấn đề phat sinh sau này
-- sudo chown -R apache:apache /var/www/html/lmhlmh9x.xyz/
+- chown -R apache:apache /var/www/html/lmhlmh9x.xyz/
 5. Chuyển tập tin trong thư mục ra ngoài:
 
 - mv wordpress/* /var/www/html/lmhlmh9x.xyz/
@@ -62,7 +62,7 @@
 2. Tạo cơ sở dữ liệu và người dùng mới có quyền sử dụng nó:
 
     + CREATE DATABASE demo;
-GRANT ALL PRIVILEGES on dmeo.* to 'lmh9x'@'localhost' identified by 'password';
+    + GRANT ALL PRIVILEGES on demo.* to 'lmh9x'@'localhost' identified by 'ho@ng1999';
 - PHẢI CÓ @'localhost'
 
     + FLUSH PRIVILEGES;
