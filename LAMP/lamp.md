@@ -2,7 +2,9 @@
 - LAMP là tên gọi chung cho quá trình tạo nên một môi trường máy chủ Web có khả năng chứa và phân phối các trang Web động thông qua việc kết hợp 4 thành phần bao gồm: Linux, Apache, MySQL và ngôn ngữ lập trình có thể là: PHP hay Perl hoặc Python.
 - Đó chính là sự kết hợp của 4 chữ cái đầu tiên trong gói đấy, chúng thường sẽ có tên là LAMP hoặc LAMP Stack.
 - Mỗi trong số đó là các gói phần mềm riêng lẻ được kết hợp để tạo thành một giải pháp máy chủ linh hoạt. Bốn phần mềm nói trên tạo thành một gói phần mềm LAMP.
+    
     <img src="image/Capture.PNG">
+    
 - Trong một số trường hợp, MySQL có thể thay thế bằng PostgreSQL hoặc MariaDB (một nhánh miễn phí của MySQL) để lập thành gói phần mềm LAMP với các khả năng kỹ thuật tương tự.
 ## Cấu trúc LAMP
 ### Linux
