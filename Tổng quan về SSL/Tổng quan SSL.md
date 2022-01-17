@@ -41,7 +41,7 @@
 ## Các phương pháp xác thực chính 
 - Tùy vào phương pháp xác thực và mức độ tin cậy mà chứng chỉ đem lại, chúng được chia thành 3 loại:
     + DV
-    + OV
+    + OV và IV
     + EV
 
-- Xem thêm thông tin tại: 
+- Xem thêm thông tin tại: https://github.com/minhhoang699x/thuctap_lmh/blob/main/C%C3%A1c%20lo%E1%BA%A1i%20ch%E1%BB%A9ng%20ch%E1%BB%89%20SSL/C%C3%A1c%20lo%E1%BA%A1i%20SSL.md
