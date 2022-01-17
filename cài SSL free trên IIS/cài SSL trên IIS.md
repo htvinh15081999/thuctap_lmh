@@ -11,3 +11,14 @@
 - Chọn New Cer, chố site chọn 1 site, sau đó nhập domain và add. Tiếp đến Request Cer.
 
 - <img src="image/2.PNG">
+## 4. Thêm binding.
+- Vào IIS manager, vào bindings.
+- Thêm site binding:
+
+    <img src="image/4.PNG">
+
+- Sau đó khởi động lại IIS.
+
+- Kết quả:
+
+<img src="image/3.PNG">
