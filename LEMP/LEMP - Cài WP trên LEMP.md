@@ -25,7 +25,7 @@
 
 7. Tạo file config cho vhost và cấu hình:
 - cd /etc/nginx/sites-available
-- nano lmhlmh9x.xyz
+- nano lmhlmh9x.xyz.conf
 - Điền nội dung theo :
 
     <img src="image/6.PNG">
