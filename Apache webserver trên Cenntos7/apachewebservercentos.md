@@ -6,7 +6,7 @@
 
 ### Khởi động dịch vụ bằng 2 câu lệnh:
 - sudo systemctl enable httpd
-- sudo systemctl start http
+- sudo systemctl start httpd
 
 <img src="image/1.PNG">
 
@@ -32,7 +32,7 @@
     + systemctl enable httpd
 ### Cấu hình vhost
 1. Tạo thư mục để lưu trữ vhost
-- sudo mkdir -p /var/www/html/lmh1.com/
+- sudo mkdir -p /var/www/html/lmh1.com/public_html
 2. Cấp quyền
 - chown -R apache:apache /var/www/html/lmh1.com/public_html
 - chmod -R 755 /var/www/html
