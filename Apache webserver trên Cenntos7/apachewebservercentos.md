@@ -49,6 +49,11 @@ Thêm dòng này ở cuối cùng
 <img src="image/7.PNG">
 
 5. Cấu hình file .conf cho các vhost tại sites-available giống ubuntu
+<VirtualHost *:80>
+	ServerName www.lmh1.com
+	ServerAlias lmh1.com
+	DocumentRoot /var/www/html/lmh1.com
+</VirtualHost>
 6. Sau đó chuyển các file .conf ở sites-available sang sites-enabled
 7. Restart service
 - sudo systemctl restart httpd.

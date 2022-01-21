@@ -54,7 +54,7 @@
 1. Vào thư mục của CB
 - cd /usr/local/directadmin/custombuild 
 2. Mở file option 
-- nano optio.conf
+- nano option.conf
 
 <img src="image/15.PNG">
 
@@ -71,3 +71,31 @@
 - Sau khi xong chạy lệnh :
 - ./build rewrite_confs
 
+# *Khi gặp phải lỗi nginx: [emerg] bind() to [::1]:80 failed (99: Cannot assign requested address) khi build từ apache sang nginx*
+
+1. Lỗi là do không bind được localhost Ipv6
+
+2. Khắc phục
+- nano /etc/sysctl.conf
+- thêm dòng : net.ipv6.ip_nonlocal_bind = 1
+- reboot
+
+- là okkkk
+
+## Chuyển từ nginx sang apache
+- Làm tương tự, chỉ dổi ở trong file option.conf từ nginx sang apache.
+
+
+## Chuyển webserver sang apache
+
+<img src="image/20.PNG">
+
+- Đổi php mode sang lsphp
+- mod_ruid2 ở webserver config chuyển thành no
+- Chạy các lệnh:
+    + ./build update
+    + ./build php n
+    + ./build openlitespeed
+    + ./build rewrite_confs
+
+- <img src="image/21.PNG">

@@ -4,8 +4,9 @@
 
 ## Cách triển khai LEMP trên Centos7
 ### Cài Nginx và tạo Vhost 
-1. Update 
+1. Update, cài thêm epel
 - yum update
+- yum install epel-release -y
 2. Cài Nginx
 - yum install nginx -y
 3. Tạo thư mục chứa vhost
@@ -41,12 +42,6 @@
 >           root /var/www/html/lmhlmh9x.xyz;
 >
 >           index index.html;
->
->           location / {
->
->                   try_files $uri $uri/ =404;
->
->           }
 >
 >           }
 8. Copy file conf vừa vấu hình vào sites-enabled
