@@ -72,6 +72,10 @@
 - Các thao tác với các chứng năng cũng tương tự nhau, không khác biệt nhiều.
 
 - cPanel có nguyên một mục mail riêng.
+
+- cPanel có easyapache, gần giống CB của DA nhưng chỉ cho các service của apache.
+
+
 ## Ngôn ngữ
 - Plesk và cPanel có Tiếng Việt
 - Direct Admin thì không.
