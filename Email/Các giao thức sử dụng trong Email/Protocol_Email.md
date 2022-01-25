@@ -9,7 +9,9 @@
 - Việc gửi email được giao thức SMTP thực hiện thông qua TCP hoặc IP. Vì vậy, người dùng có thể an tâm về khả năng bảo mật và tính tiện lợi. 
 - Sử dụng giao thức SMTP giúp người dùng nâng cao hiệu suất làm việc. Bởi chúng hỗ trợ việc gửi lượng lớn thư điện tử chỉ trong thời gian ngắn. Nhờ thế, người dùng tiết kiệm rất nhiều thời gian và công sức so với việc gửi thư thủ công.
 - Giao thức SMTP còn cho phép gửi tệp tin đính kèm với khả năng lưu trữ dung lượng lớn.
-
+- Port mặc định :
+    + 25 - không mã hóa
+    + 587 - mã hóa SSL/TLS - SMTPS
 <img src="image/1.PNG">
 
 ### 2. SMTP Server là gì
@@ -22,7 +24,7 @@
 
 <img src="image/2.PNG">
 
-- Email được gửi bời mail clien là tác nhân người dùng thư (Mail User Agent - MUA) đến mail server là tác nhân gửi thư (Mail Submission Agent - MSA),sử dụng SMTP trên port TCP 587.  Những nhà cung cấp mail box vẫn cho phép gửi thư trên port truyền thống 25.
+- Email được gửi bời mail client là tác nhân người dùng thư (Mail User Agent - MUA) đến mail server là tác nhân gửi thư (Mail Submission Agent - MSA),sử dụng SMTP trên port TCP 587.  Những nhà cung cấp mail box vẫn cho phép gửi thư trên port truyền thống 25.
 - MSA gửi thư đến đại lí truyển thư (Mail transfer Agent - MTA). Thông thường, 2 tác nhận này là đều xuất phát từ cùng một phần mềm được khởi chạy với các tùy chọn khác nhau trên cùng một máy. Quá trình xử lí cục bộ có thể được thực hiện trên một máy vật lí duy nhất.
 - MTA sử dụng DNS để tra cứu MX record cho miền của người nhần (phần bên phải của @). MX record chứa tên MTA của mục tiêu. Dựa trên server đích và các yếu tố khác, MTA sẽ chọn máy chủ người nhận và kết nối với nó để hoàn tất quá trình trao đổi thư.
 - Việc truyền thư có thể xảy ra trong một kết nối duy nhất giữa 2 MTA hoặc qua 1 chuỗi các hệ thống trung gian.
