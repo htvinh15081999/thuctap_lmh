@@ -26,3 +26,6 @@
 
 ## Build theo profile
 
+<img src="image/8.PNG">
+
+<img src="image/9.PNG">

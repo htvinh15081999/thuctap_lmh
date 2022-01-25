@@ -64,3 +64,10 @@
 
 <img src="image/15.PNG">
 
+## Cài Nginx Reserve
+
+<img src="image/16.PNG">
+
+- Sau đó ấn Install và đợi 1 chút.
+
+

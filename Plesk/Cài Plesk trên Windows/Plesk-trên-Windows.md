@@ -11,8 +11,6 @@
 
 4. Khi quá trình cài đặt hoàn tất, restart hệ thống.
 
-<img src="image/3.png">
-
 5. Đăng nhập
 - Username là admin, mật khẩu khởi tạo lúc cài đặt.
 
@@ -64,5 +62,6 @@
 
 <img src="image/14.PNG">
 
-*Có thể cài SSL/TLS của Let's Encrypt ngay trên Plesk*
-*port để vào Plesk là 8443 cho HTTP, 8880 cho HTTPS*
+- *Có thể cài SSL/TLS của Let's Encrypt ngay trên Plesk*
+
+- *port để vào Plesk là 8443 cho HTTP, 8880 cho HTTPS*
