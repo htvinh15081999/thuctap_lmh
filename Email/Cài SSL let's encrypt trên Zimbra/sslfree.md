@@ -12,5 +12,3 @@
 - cd mnt 
 - git clone https://github.com/certbot/certbot
 
-
-
