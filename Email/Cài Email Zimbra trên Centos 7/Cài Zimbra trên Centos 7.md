@@ -72,3 +72,6 @@
 <img src="image/24.PNG">
 
 
+*Port quản trị : 7071 - Port vào hòm thư : 8443*
+
+
