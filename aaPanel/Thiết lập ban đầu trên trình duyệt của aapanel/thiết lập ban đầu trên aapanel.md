@@ -29,3 +29,13 @@
 - Và còn nhiều cái nữa để khám phá.
 
 
+
+3. Appstore trên aaPanel.
+
+- Hiển thị tất cả các ứng dụng có thể cài đặt được, free hoặc trả phí
+
+<img src="image/8.PNG">
+
+- Có thể xem các app đã cài ở Installed, bật tắt chúng hiển thị trên dashboard trang chủ.
+
+<img src="image/9.PNG">
