@@ -36,6 +36,8 @@
 
 <img src="image/4.PNG">
 
+
+
 # Các phương pháp xác thực SSL
 ## Phương pháp truyền thống
 - Phương pháp truyền thống thông qua DCV-Email: Người dùng sẽ nhận được một email xác thực tương ứng với email đăng ký SSL. Email sẽ chứa một mã xác nhận duy nhất và một liên kết. Nhấp vào liên kết và nhập mã để xác nhận việc sở hữu tên miền.
@@ -43,3 +45,19 @@
 ## Phương pháp thay thế DCV
 - HTTP-based DCV, HTTPS-based DCV: Là phương pháp xác thực qua file. Nhà cung cấp sẽ gửi cho khách hàng nội dung của file xác thực kèm đường dẫn để khách hàng khởi tạo file theo đường dẫn được cung cấp trên server.
 - DNS CNAME-based : Xác thực qua DNS. Nhà cung cấp sẽ gửi cho khách hàng nội dung một record để khách hàng xác thực SSL qua hệ thống DNS domain.
+
+# Phân loại chứng chỉ dựa trên số tên miền được bảo vệ
+## Single Name SSL Certificate
+- Một chứng chỉ chỉ xác thực cho 1 tên miền
+
+## Wildcard SSL
+
+- Xác thực cho 1 tiên miền và tất cả các subdomain của nó
+
+## Multi-Domain SSL
+
+- Xác thực nhiều tên miền và các subdomain
+
+## Unifined Communication
+
+- UCCs cho phép khách hàng bảo vệ lên tới 100 tên miền, thiết kế đặc biệt để bảo đảm Microsoft Exchange và các Office Communication Server.
