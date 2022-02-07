@@ -99,6 +99,7 @@
 - Đầu tiên, xác định các services trên hệ thống:
     + firewall-cmd --get-services
     + Lưu ý: Biết thêm thông tin về service qua thông tin lưu tại /usr/lib/firewalld/services/.
+    
     <img src="image/4.PNG">
 
 - Hệ thống thông thường cần cho phép các services sau: ssh(22/TCP), http(80/TCP), https(443/TCP), smtp(25/TCP), smtps(465/TCP) và smtp-submission(587/TCP)
