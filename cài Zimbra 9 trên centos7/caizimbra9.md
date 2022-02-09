@@ -1,5 +1,8 @@
 # Cài Zimbra 9 trên Centos 7
 
+*https://imanudin.net/2020/05/03/how-to-install-zimbra-9-open-source-edition-unofficial-on-centos-7/*
+
+*https://kb.nhanhoa.com/pages/viewpage.action?pageId=33817127*
 1. Cài wget và screen
 yum install wget screen -y
 
