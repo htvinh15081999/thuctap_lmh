@@ -4,7 +4,7 @@
 
 *https://kb.nhanhoa.com/pages/viewpage.action?pageId=33817127*
 1. Cài wget và screen
-yum install wget screen -y
+- yum install wget screen -y
 
 2. Dowload script tự động cấu hình
 - screen -S install-zimbra
