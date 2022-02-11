@@ -123,11 +123,48 @@
 
 
 
+## Tạo spf, dkim, dmarc record để gửi thư được cho gmail.
+
+### Tạo spf
+- Tên : @
+- Loại : TXT
+- Giá trị: v=spf1 +a +mx +ip4:103.28.38.111 ~all
+
+<img src="image/50.PNG">
+
+### Tạo Dmarc
+- Tên: @
+- Loại : TXT
+- Giá trị: v=DMARC1; p=none; rua=mailto:mailauth-reports@zimbra.email-nhanhoa.com
+
+<img src="image/51.PNG">
 
 
 
+### Tạo Dkim
+
+1. Active Dkim
+
+- su zimbra
+- /opt/zimbra/libexec/zmdkimkeyutil -a -d email-nhanhoa.com
+
+<img src="image/52.PNG">
+
+2. Get Dkim
+- /opt/zimbra/libexec/zmdkimkeyutil -q -d email-nhanhoa.com
+
+<img src="image/53.PNG">
+
+3. Tạo record
+
+- Tên : BB6A5E4E-8B22-11EC-B541-E43F485BC4B3._domainkey 
+- Loại : TXT
+- Khi lấy giá trị thì bỏ các dấu " để gộp thành chuỗi:
+
++ "v=DKIM1;k=rsa;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArv/exfkvn0qlbIfQzuMwEwoXihcz39H6IU67D5Cr5zx2N47L6Cy0K2yWVSq5S2JDbwECBtrcoKV0vUMW/nQXqxCAT1X8izXMxYnRMHnH3ysfItP0kK6NymOCi6DyYFpifYOleM62R4edw/AvWSulJVHY4VmLEeFteJtRBHbPMQ2PIj04MSTKqWY1DmqwT7adI2k61JGcz+Ls+tlQ8eEsQ8BdIdxXKoeftTpH4S8q6EGMYVCEENGq6yygSBw3HEpzT78DWdFfm2DY2LKbR+Dnj/21KzY8QvK7cEfWaAA0eaXnR++nrd+OqXiEwq60e7yFEtiZb8B2EvhZQVSwIDAQAB"
 
 
+4. Test kết quả
+<img src="image/56.PNG">
 
-
-
+- OK
