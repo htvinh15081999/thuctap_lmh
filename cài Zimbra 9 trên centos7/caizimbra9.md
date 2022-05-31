@@ -61,13 +61,13 @@
 - zmcontrol status
 -------------------
 ### Blocking Memcached Exploit
-Configure memcached to listen on 127.0.0.1 only to avoid this attack. Use below commands.
-su - zimbra
- /opt/zimbra/bin/zmprov ms `zmhostname` zimbraMemcachedBindAddress 127.0.0.1 
- /opt/zimbra/bin/zmprov ms `zmhostname` zimbraMemcachedClientServerList 127.0.0.1
 
-Restart memcached:
-zmmemcachedctl restart
+- su - zimbra
+-  /opt/zimbra/bin/zmprov ms `zmhostname` zimbraMemcachedBindAddress 127.0.0.1 
+-  /opt/zimbra/bin/zmprov ms `zmhostname` zimbraMemcachedClientServerList 127.0.0.1
+
+
+- zmmemcachedctl restart
 
 
 7. Truy cập thử bằng đường dẫn 
