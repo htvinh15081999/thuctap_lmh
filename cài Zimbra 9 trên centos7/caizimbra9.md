@@ -2,12 +2,13 @@
 
 ## Trước hết cần:
 1. Remove package httpd
-yum remove httpd -y
+
+- yum remove httpd -y
 
 2. Tắt sendmail 
+- service sendmail stop
+- systemctl disable sendmail
 
-service sendmail stop
-systemctl disable sendmail
 ---------------------------------------
 *https://imanudin.net/2020/05/03/how-to-install-zimbra-9-open-source-edition-unofficial-on-centos-7/*
 
