@@ -1,7 +1,11 @@
 # Cài Zimbra 9 trên Centos 7
 
 ## Trước hết cần:
+1. Remove package httpd
 yum remove httpd -y
+
+2. Tắt sendmail 
+
 service sendmail stop
 systemctl disable sendmail
 ---------------------------------------
