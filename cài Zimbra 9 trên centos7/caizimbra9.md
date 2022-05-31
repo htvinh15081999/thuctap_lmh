@@ -1,5 +1,10 @@
 # Cài Zimbra 9 trên Centos 7
 
+## Trước hết cần:
+yum remove httpd -y
+service sendmail stop
+systemctl disable sendmail
+---------------------------------------
 *https://imanudin.net/2020/05/03/how-to-install-zimbra-9-open-source-edition-unofficial-on-centos-7/*
 
 *https://kb.nhanhoa.com/pages/viewpage.action?pageId=33817127*
@@ -49,6 +54,15 @@
 - su zimbra
 
 - zmcontrol status
+-------------------
+### Blocking Memcached Exploit
+Configure memcached to listen on 127.0.0.1 only to avoid this attack. Use below commands.
+su - zimbra
+ /opt/zimbra/bin/zmprov ms `zmhostname` zimbraMemcachedBindAddress 127.0.0.1 
+ /opt/zimbra/bin/zmprov ms `zmhostname` zimbraMemcachedClientServerList 127.0.0.1
+
+Restart memcached:
+zmmemcachedctl restart
 
 
 7. Truy cập thử bằng đường dẫn 
